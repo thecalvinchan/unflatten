@@ -2,12 +2,23 @@
   "name": "unflatten.js",
   "version": "1.0.0",
   "description": "lightweight library to unflatten objects",
-  "main": "index.js",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
   "repository": "https://github.com/thecalvinchan/unflatten.js",
   "author": "calvin.chan.h@gmail.com",
   "license": "MIT",
   "private": false,
   "dependencies": {
     "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "regenerator-runtime": "^0.11.1"
   }
 }
