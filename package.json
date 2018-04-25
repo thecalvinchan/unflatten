@@ -1,0 +1,13 @@
+{
+  "name": "unflatten.js",
+  "version": "1.0.0",
+  "description": "lightweight library to unflatten objects",
+  "main": "index.js",
+  "repository": "https://github.com/thecalvinchan/unflatten.js",
+  "author": "calvin.chan.h@gmail.com",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
+}
