@@ -14,7 +14,15 @@ const flattenedObj = {
 }
 
 test('unflattens obj', () => {
-  const obj = unflatten('.')(flattenedObj)
-  console.log(obj)
-  expect(obj.a.b.c.d.e.f).toBeDefined()
+  const obj = unflatten('.')({})(flattenedObj)
+  expect(obj.a.b.c.d.e.f.g).toEqual(1)
+  expect(obj.a.b.c.d.e.f.h).toEqual(1)
+  expect(obj.a.b.c.d.e.f.i).toEqual(1)
+  expect(obj.a.b.c.d.e.f.j).toEqual(1)
+  expect(obj.a.b.c.d.e.f.k).toEqual(1)
+  expect(obj.a.b.c.d.e.f.l).toEqual(1)
+  expect(obj.a.b.c.d.e.f.m).toEqual(1)
+  expect(obj.a.b.c.d.e.f.n).toEqual(1)
+  expect(obj.a.b.c.d.e.f.o).toEqual(1)
+  expect(obj.a.b.c.d.e.f.p).toEqual(1)
 })
